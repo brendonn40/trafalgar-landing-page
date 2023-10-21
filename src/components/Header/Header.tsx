@@ -8,7 +8,7 @@ const links = [
   { link: '/pricing', label: 'Find a doctor' },
   { link: '/learn', label: 'Apps' },
   { link: '/community', label: 'Testimonials' },
-  { link: '/community', label: 'About us' },
+  { link: '/te', label: 'About us' },
 ];
 
 export function Header() {
