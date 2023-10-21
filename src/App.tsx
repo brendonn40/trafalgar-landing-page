@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Download from "./components/Download";
 import Articles from "./components/Articles";
 import { Footer } from "./components/Footer";
+import CarouselFeedback from "./components/Carousel";
 
 export default function App() {
   return <MantineProvider theme={theme}>
@@ -15,6 +16,7 @@ export default function App() {
     <HeroSection/>
     <Services/>
    <Download/>
+   <CarouselFeedback/>
    <Articles/>
    <Footer/>
     </Stack>
