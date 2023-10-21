@@ -26,7 +26,7 @@ function HeroSection() {
             Consult today
           </Button>
         </Stack>
-        <Image src={'/hero-image.png'} />
+        <Image src={'/trafalgar-landing-page/hero-image.png'} />
       </Flex>
     </Container>
   );
