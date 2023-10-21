@@ -9,16 +9,19 @@ import {
   Group,
   Stack,
 } from '@mantine/core';
+import classes from './Articles.module.css';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 function Articles() {
+  const isMobile = useIsMobile();
   return (
     <Container size="xl" >
         <Stack justify='center' align='center'>
         <Title order={2} fw={700} lh={'56px'} fz="36px">
         Check out our latest article
       </Title>
-      <Flex gap={34}>
-        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350}  style={{alignItems:'self-start'}}>
+      <Flex direction={isMobile ? 'column':'row'} gap={34}>
+        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350}  style={{alignItems:'self-start'}} className={classes.card}>
           <Card.Section>
             <Image src="/post1.png" height={160} alt="Post#1" />
           </Card.Section>
@@ -35,7 +38,7 @@ function Articles() {
             Read more
           </Button>
         </Card>
-        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350} style={{alignItems:'self-start'}}>
+        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350} style={{alignItems:'self-start'}} className={classes.card}>
           <Card.Section>
             <Image src="/post2.png" height={160} alt="Post#2" />
           </Card.Section>
@@ -53,7 +56,7 @@ function Articles() {
             Read more
             </Button>
         </Card>
-        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350} style={{alignItems:'self-start'}}>
+        <Card shadow="sm" padding="lg" radius="xl" withBorder maw={350} style={{alignItems:'self-start'}} className={classes.card}>
           <Card.Section>
             <Image src="/post3.png" height={160} alt="Post#3" />
           </Card.Section>

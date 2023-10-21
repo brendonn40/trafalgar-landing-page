@@ -1,11 +1,13 @@
 import { Container, Stack, Image, Flex, Title, Button } from '@mantine/core';
 import { Text } from '../Text/index';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 function Download() {
+  const isMobile = useIsMobile();
   return (
     <Container size={'xl'}>
       <Stack gap={100}>
-        <Flex justify={'space-between'} align={'center'}>
+        <Flex direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'}>
           <Image src={'/mid-section-1.png'} maw={650} />
           <Stack gap={37}>
             <Title
@@ -42,7 +44,7 @@ function Download() {
             </Button>
           </Stack>
         </Flex>
-        <Flex justify={'space-around'} align={'center'}>
+        <Flex direction={isMobile ? 'column':'row'} justify={'space-around'} align={'center'}>
           <Stack gap={37}>
             <Title
               order={2}

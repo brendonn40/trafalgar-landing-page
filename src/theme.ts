@@ -1,5 +1,5 @@
 import { createTheme } from "@mantine/core";
 
 export const theme = createTheme({
-    fontFamily: 'Mulish, sans-serif',
+    fontFamily: 'Muli, sans-serif',
 });

@@ -1,8 +1,14 @@
 .box {
-    padding: 40px;
+  padding: 40px;
   border-radius: 20px;
   background: #fff;
   max-width: 350px;
   /* drop shadow */
   box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: var(--mantine-shadow-md);
+  }
 }

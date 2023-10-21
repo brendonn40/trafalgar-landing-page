@@ -8,13 +8,15 @@ import {
 } from '@mantine/core';
 import { Text } from '../Text/index';
 import './styles.css';
-import search from '../../../public/search.svg';
-import flask from '../../../public/flask.svg';
-import ficha from '../../../public/ficha.svg';
-import report from '../../../public/report.svg';
-import healthbox from '../../../public/healthBox.svg';
-import list from '../../../public/list.svg';
+import search from '/search.svg';
+import flask from '/flask.svg';
+import ficha from '/ficha.svg';
+import report from '/report.svg';
+import healthbox from '/healthBox.svg';
+import list from '/list.svg';
+import { useIsMobile } from '../../hooks/useIsMobile';
 function Services() {
+  const isMobile = useIsMobile();
   return (
     <Stack
       style={{
@@ -37,7 +39,7 @@ function Services() {
             suitable for your health
           </Text>
           <SimpleGrid
-            cols={3}
+            cols={isMobile ? 1:3}
             spacing={'34px'}
             verticalSpacing={'37px'}
             style={{ width: '100%' }}

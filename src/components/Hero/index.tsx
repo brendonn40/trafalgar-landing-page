@@ -1,9 +1,11 @@
 import { Stack, Title, Button, Flex, Image, Container } from '@mantine/core';
 import { Text } from '../Text/index';
+import { useIsMobile } from '../../hooks/useIsMobile';
 function HeroSection() {
+  const isMobile = useIsMobile();
   return (
     <Container size={'xl'}>
-      <Flex justify={'space-between'} align={'center'}>
+      <Flex  direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'}>
         <Stack gap={25}>
           <Title order={2} size={48} maw={427}>
             Virtual healthcare for you

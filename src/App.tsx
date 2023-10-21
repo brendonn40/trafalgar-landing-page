@@ -6,6 +6,7 @@ import HeroSection from "./components/Hero";
 import Services from "./components/Services";
 import Download from "./components/Download";
 import Articles from "./components/Articles";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return <MantineProvider theme={theme}>
@@ -14,5 +15,6 @@ export default function App() {
     <Services/>
    <Download/>
    <Articles/>
+   <Footer/>
    </MantineProvider>;
 }
