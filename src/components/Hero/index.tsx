@@ -5,7 +5,7 @@ function HeroSection() {
   const isMobile = useIsMobile();
   return (
     <Container size={'xl'}>
-      <Flex  direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'}>
+      <Flex  direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'} gap={isMobile ? 'xl':'sm'}>
         <Stack gap={25}>
           <Title order={2} size={48} maw={427}>
             Virtual healthcare for you
@@ -21,7 +21,7 @@ function HeroSection() {
           <Button
             radius={'xl'}
             style={{ width: 'fit-content', fontSize: '18px' }}
-            size="xl"
+            size={isMobile ? 'md':"xl"}
           >
             Consult today
           </Button>

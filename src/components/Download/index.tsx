@@ -5,9 +5,9 @@ import { useIsMobile } from '../../hooks/useIsMobile';
 function Download() {
   const isMobile = useIsMobile();
   return (
-    <Container size={'xl'}>
-      <Stack gap={100}>
-        <Flex direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'}>
+    <Container size={'xl'} style={{width:'100%'}}>
+      <Stack gap={100} w={'100%'}>
+        <Flex direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'} gap={isMobile ? 'xl':'sm'} >
           <Image src={'/mid-section-1.png'} maw={650} />
           <Stack gap={37}>
             <Title
@@ -44,7 +44,7 @@ function Download() {
             </Button>
           </Stack>
         </Flex>
-        <Flex direction={isMobile ? 'column':'row'} justify={'space-around'} align={'center'}>
+        <Flex direction={isMobile ? 'column':'row'} justify={'space-around'} align={'center'} gap={isMobile ? 'xl':'sm'}>
           <Stack gap={37}>
             <Title
               order={2}
