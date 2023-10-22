@@ -8,7 +8,7 @@ function Download() {
     <Container size={'xl'} style={{width:'100%'}}>
       <Stack gap={100} w={'100%'}>
         <Flex direction={isMobile ? 'column':'row'} justify={'space-between'} align={'center'} gap={isMobile ? 'xl':'sm'} >
-          <Image src={'/trafalgar-landing-page/mid-section-1.png'} maw={650} />
+          <Image src={'/mid-section-1.png'} maw={650} />
           <Stack gap={37}>
             <Title
               order={2}
@@ -79,7 +79,7 @@ function Download() {
               Download
             </Button>
           </Stack>
-          <Image src={'/trafalgar-landing-page/mid-section-2.png'} maw={665} />
+          <Image src={'/mid-section-2.png'} maw={665} />
         </Flex>
       </Stack>
     </Container>

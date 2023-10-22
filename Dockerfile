@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16-alpine AS build
 
 WORKDIR /app
 
@@ -7,8 +7,8 @@ RUN yarn install
 
 COPY . .
 
-## EXPOSE [Port you mentioned in the vite.config file]
+RUN yarn build
 
-EXPOSE 5173
-
-CMD ["yarn","dev"]
+FROM nginx 
+COPY --from=build /app/dist/ /usr/share/nginx/html 
+CMD ["nginx", "-g", "daemon off;"]

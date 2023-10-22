@@ -12,19 +12,19 @@ function Articles() {
         </Title>
         <Flex direction={isMobile ? 'column' : 'row'} gap={34}>
           <PostCard
-            image="/trafalgar-landing-page/post1.png"
+            image="/post1.png"
             title="Disease detection, check up in the laboratory"
             preview="In this case, the role of the health laboratory is very important to
             do a disease detection..."
           />
           <PostCard
-            image="/trafalgar-landing-page/post2.png"
+            image="/post2.png"
             title="Herbal medicines that are safe for consumption"
             preview="Herbal medicine is very widely used at this time because of its very
             good for your health..."
           />
           <PostCard
-            image="/trafalgar-landing-page/post3.png"
+            image="/post3.png"
             title="Natural care for healthy facial skin"
             preview="A healthy lifestyle should start from now and also for your skin
             health. There are some..."
